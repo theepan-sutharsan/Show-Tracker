@@ -1,15 +1,13 @@
-
 import { showsData } from "./data.js";
 
-DisplayShows();
+let showsList = document.getElementById("showList");
+showsList.innerHTML = "";
 
-function DisplayShows() {
-  let showsList = document.getElementById("showList");
-  showsList.innerHTML="";
+DisplayShows(showsData);
 
-  showsData.forEach(show => {
-    showsList.innerHTML+=
-    `
+function DisplayShows(data) {
+  data.forEach((show) => {
+    showsList.innerHTML += `
        <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
                       <div class="card text-center shadow">
                         <div class="row">
@@ -31,6 +29,22 @@ function DisplayShows() {
                       </div>
                     </div>
 
-    `
+    `;
   });
 }
+
+//Filter Using Numbers & Letters
+
+window.FilterNumLetters = function (letter) {
+  let filter1 = showsData.filter((show) => {
+    return show.title.charAt() == letter;
+  });
+  console.log(filter1);
+
+  if (filter1.length !== 0) {
+    showsList.innerHTML = "";
+    DisplayShows(filter1);
+  } else {
+    alert("Show not Found!");
+  }
+};
