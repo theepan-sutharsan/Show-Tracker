@@ -1,355 +1,401 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShowTracker</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShowTracker</title>
+    <link
+      rel="shortcut icon"
+      href="https://im.chip.de/ii/1/2/6/7/7/0/6/9/9/Screenshot_2023-05-09_145856-b7737f77c657ee6c.png?im=AspectCrop%2Csize%3D%281%2C1%29%2Cgravity%3DCenter%3BResize%3D%28204%2C204%29%2Caspect%3Dfit%3BBackgroundColor%2Ccolor%3Dffffff&hash=08d761e04d35f6c9b411a8463d8511b92a785224ab4a448f9937587447703e73"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon"
-    href="https://im.chip.de/ii/1/2/6/7/7/0/6/9/9/Screenshot_2023-05-09_145856-b7737f77c657ee6c.png?im=AspectCrop%2Csize%3D%281%2C1%29%2Cgravity%3DCenter%3BResize%3D%28204%2C204%29%2Caspect%3Dfit%3BBackgroundColor%2Ccolor%3Dffffff&hash=08d761e04d35f6c9b411a8463d8511b92a785224ab4a448f9937587447703e73"
-    type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-</head>
+  <body>
+    <header class="sticky-top shadow">
+      <!-- navbar -->
+      <nav class="navbar p-0 navbar-expand navbar-light bg-light">
+        <a class="navbar-brand bg-warning p-2" href="/index.html"
+          >Show<span class="fw-bold">Tracker</span></a
+        >
+        <div class="container-fluid p-0">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active p-2" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/add.html">Add</a>
+            </li>
+          </ul>
 
-<body>
-  <header class="sticky-top shadow">
-    <!-- navbar -->
-    <nav class="navbar p-0 navbar-expand navbar-light bg-light">
-      <a class="navbar-brand bg-warning p-2" href="/index.html">Show<span class="fw-bold">Tracker</span></a>
-      <div class="container-fluid p-0">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active p-2" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="/add.html">Add</a></li>
-        </ul>
-
-        <ul class="navbar-nav pe-1">
-          <li class="nav-item"><a class="nav-link" href="/login.html">Login</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="/signup.html">Sign up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!-- hero -->
-    <section id="hero" class="mt-4">
-      <div class="container  col-8">
-        <div id="numberAndLetters">
-
-          <ul class="list-inline d-flex justify-content-center">
-
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">0-9</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">A</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">B</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">C</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">D</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">E</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">F</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">G</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">H</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">I</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">J</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">K</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">L</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">M</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">N</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">O</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">P</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">Q</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">R</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">S</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">T</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">U</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">V</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">W</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">X</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">Y</a></li>
-            <li class="list-inline-item"><a href="" class="text-dark fw-semibold text-decoration-none p-1">Z</a></li>
+          <ul class="navbar-nav pe-1">
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup.html">Sign up</a>
+            </li>
           </ul>
         </div>
-        <div id="movieGenres">
-          <ul class="movie-genres list-inline">
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Action</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Adventure</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Animation</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Children</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Comedy</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Crime</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Documentary</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Drama</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Family</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Fantasy</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Food</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Home and Garden</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Horror</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Mini Series</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Mystery</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">News</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Reality</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Romance</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Sci-Fi</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Sport</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Suspense</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Talk Show</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Thriller</a></li>
-            <li class="list-inline-item bg-secondary rounded m-1"> <a href=""
-                class="text-black text-decoration-none p-2">Travel</a></li>
-
-
-          </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- hero -->
+      <section id="hero" class="mt-4">
+        <div class="container col-8">
+          <div id="numberAndLetters">
+            <ul class="list-inline d-flex justify-content-center">
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >0-9</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >A</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >B</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >C</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >D</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >E</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >F</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >G</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >H</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >I</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >J</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >K</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >L</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >M</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >N</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >O</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >P</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >Q</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >R</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >S</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >T</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >U</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >V</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >W</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >X</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >Y</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href=""
+                  class="text-dark fw-semibold text-decoration-none p-1"
+                  >Z</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="movieGenres">
+            <ul class="movie-genres list-inline">
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Action</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Adventure</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Animation</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Children</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Comedy</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2">Crime</a>
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Documentary</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2">Drama</a>
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Family</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Fantasy</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2">Food</a>
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Home and Garden</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Horror</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Mini Series</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Mystery</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2">News</a>
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Reality</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Romance</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Sci-Fi</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2">Sport</a>
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Suspense</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Talk Show</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Thriller</a
+                >
+              </li>
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <a href="" class="text-black text-decoration-none p-2"
+                  >Travel</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <section>
-      <div class="container col-8">
-        <!-- card -->
-        <div class="card ">
-          <div class="row">
-            <div class="col-12">
-              <div class="card-header d-flex align-items-center ">
-
-                <div class="col-9">
-                  <h6 class="card-title mt-2">TOP 12 SHOWS</h6>
+      </section>
+      <section>
+        <div class="container col-8">
+          <!-- card -->
+          <div class="card">
+            <div class="row">
+              <div class="col-12">
+                <div class="card-header d-flex align-items-center">
+                  <div class="col-9">
+                    <h6 class="card-title mt-2">TOP 12 SHOWS</h6>
+                  </div>
+                  <div class="col-3">
+                    <input
+                      class="form-control"
+                      type="search"
+                      name="search"
+                      placeholder="Search..."
+                      id="search"
+                    />
+                  </div>
                 </div>
-                <div class="col-3">
-                  <input class="form-control" type="search" name="search" placeholder="Search..." id="search">
-                </div>
-              </div>
-              <div class="card-body ">
-                <div class="row">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow ">
 
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/gt.jpg" alt="gt" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body">
-                            <h6 class="card-title ">Game of Thrones</h6>
-                            <p class="card-text text-secondary ">Episode 84</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card  text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/bb.jpg" alt="bb" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">Breaking Bad</h6>
-                            <p class="card-text text-secondary ">Episode 49</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/tb.jpg" alt="tb" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">The Boys</h6>
-                            <p class="card-text text-secondary ">Episode 24</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/wd.jpg" alt="wd" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">Wednesday</h6>
-                            <p class="card-text text-secondary ">Episode 14</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/st.jpg" alt="st" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">Stranger Things</h6>
-                            <p class="card-text text-secondary ">Episode 27</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/one.jpg" alt="one" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">One Piece</h6>
-                            <p class="card-text text-secondary ">Episode 8</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center shadow">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/dd.jpg" alt="dd" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">DareDevil</h6>
-                            <p class="card-text text-secondary ">Episode 17</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 pb-3">
-                    <div class="card text-center ">
-
-                      <div class="row">
-                        <div class="col-6 col-sm-12">
-                          <img src="/assets/images/lk.jpg" alt="lk" class=" img-fluid h-100 w-100 rounded">
-                        </div>
-                        <div class="col-6 col-sm-12">
-
-                          <div class="card-body ">
-                            <h6 class="card-title ">Loki</h6>
-                            <p class="card-text text-secondary ">Episode 48</p>
-                          </div>
-                        </div>
-
-
-
-                      </div>
-
-
-
-                    </div>
-                  </div>
-
+                <div class="card-body">
+                  <div class="row" id="showList"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="./js/home.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
