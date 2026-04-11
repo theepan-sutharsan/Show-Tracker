@@ -11,7 +11,7 @@ const showsData = [
     poster: "../assets/images/gt.jpg",
     description:
       "Set in the vast and brutal continents of Westeros and Essos, Game of Thrones is a sprawling tale of dynastic struggles, political manipulation, and the thin line between honor and survival. The story follows several noble houses, primarily the Starks, Lannisters, and Targaryens, as they engage in a high-stakes 'game' to claim the Iron Throne. Beyond the politics, the world is filled with ancient magic, fearsome dragons, and an impending apocalypse led by the Night King and his army of the dead. It is a show where no character is safe, and every choice has a heavy price, blending gritty realism with high fantasy in a way that redefined modern television.",
-    episodes_count:41,
+    episodes_count: 41,
     episodes: [
       {
         season: 1,
@@ -36,8 +36,8 @@ const showsData = [
     poster: "../assets/images/bb.jpg",
     description:
       "Breaking Bad is a dark, gripping character study that chronicles the total transformation of Walter White, a brilliant but underachieving high school chemistry teacher. Living a life of quiet desperation and facing a terminal cancer diagnosis, Walter decides to risk everything by entering the meth-cooking business with a former student, Jesse Pinkman. What starts as a desperate attempt to secure his family's financial future quickly spirals into a descent into darkness, as Walter embraces his ego and becomes the ruthless drug lord 'Heisenberg'. The series masterfully explores themes of morality, consequence, and the corrupting nature of power, set against the stark landscape of Albuquerque.",
-    episodes_count:12,
-    
+    episodes_count: 12,
+
     episodes: [
       {
         season: 1,
@@ -62,7 +62,7 @@ const showsData = [
     poster: "../assets/images/dr.jpg",
     description:
       "By day, Dexter Morgan is an expert blood-spatter analyst for the Miami Metro Police, a quiet and helpful colleague. By night, he is a vigilante serial killer who hunts down those he believes have escaped the justice system. Guided by 'The Code of Harry', a set of rules instilled by his adoptive father to channel his homicidal urges, Dexter only kills other murderers. The series offers a chillingly intimate look into the mind of a sociopath who struggles to mimic human emotions and maintain a normal life with his sister Debra and girlfriend Rita, all while staying one step ahead of the very police force he works for.",
-    episodes_count:24,
+    episodes_count: 24,
     episodes: [
       {
         season: 1,
@@ -87,7 +87,7 @@ const showsData = [
     poster: "../assets/images/hm.jpg",
     description:
       "Set in Manhattan, this long-running sitcom follows the romantic adventures of Ted Mosby and his four best friends. Told through a series of flashbacks by a future Ted to his children in the year 2030, the story explores the highs and lows of dating, friendship, and adult life. From the legendary antics of Barney Stinson to the soulmate connection of Marshall and Lily, and the career ambitions of Robin Scherbatsky, the series is a heartfelt and often hilarious journey about finding 'The One'. It stands out for its unique structure, running gags, and its ability to balance lighthearted comedy with truly emotional life moments.",
-    episodes_count:14,
+    episodes_count: 14,
 
     episodes: [
       {
@@ -113,7 +113,7 @@ const showsData = [
     poster: "../assets/images/tb.jpg",
     description:
       "In a world where superheroes are real, they aren't the noble figures we see in comic books. Instead, they are owned and marketed by Vought International, a massive corporation that covers up their scandals and crimes. Most 'Supes' are arrogant, corrupt, and dangerous, especially the god-like Homelander. 'The Boys' are a ragtag group of humans led by Billy Butcher, who have suffered personally at the hands of these heroes. Armed with nothing but their wits, weapons, and a burning desire for revenge, they attempt to expose the truth and bring down the supes in a hyper-violent, satirical battle for justice.",
-    episodes_count:38,
+    episodes_count: 38,
 
     episodes: [
       {
@@ -139,7 +139,7 @@ const showsData = [
     poster: "../assets/images/wd.jpg",
     description:
       "Wednesday Addams, the iconic daughter of the Addams Family, is sent to Nevermore Academy, a school specifically for supernatural outcasts. While navigating her cold, antisocial personality and her emerging psychic abilities, she becomes embroiled in a local murder mystery that has plagued the town for decades. With the help of her colorful roommate Enid and her silent companion Thing, Wednesday must uncover the truth about a monster on the loose and a secret conspiracy that involves her own parents' past, all while trying to survive the social horrors of boarding school life.",
-    episodes_count:16,
+    episodes_count: 16,
 
     episodes: [
       {
@@ -165,7 +165,7 @@ const showsData = [
     poster: "../assets/images/st.jpg",
     description:
       "A nostalgic love letter to the 1980s, Stranger Things begins with the mysterious disappearance of young Will Byers in the small town of Hawkins. As his friends, family, and local police chief search for him, they uncover a government conspiracy involving secret psychological experiments and a gateway to a dark, decaying parallel dimension known as the 'Upside Down'. The arrival of a telekinetic girl named Eleven changes everything, as the group must band together to fight otherworldly monsters and protect their world from a growing supernatural threat that spans seasons and dimensions.",
-    episodes_count:21,
+    episodes_count: 21,
     episodes: [
       {
         season: 4,
@@ -190,7 +190,7 @@ const showsData = [
     poster: "../assets/images/lk.jpg",
     description:
       "After the events of Avengers: Endgame, an alternate version of Loki steals the Tesseract and is immediately arrested by the Time Variance Authority (TVA), a bureaucratic organization that exists outside of time. Forced to answer for his crimes against the 'Sacred Timeline', Loki is recruited by Agent Mobius to help hunt down a dangerous variant of himself. The series follows Loki’s journey from a self-serving villain to a hero who questions the nature of fate and identity, eventually taking him on a mind-bending adventure across the multiverse to prevent its total destruction.",
-    episodes_count:28,
+    episodes_count: 28,
 
     episodes: [
       {
@@ -206,5 +206,4 @@ const showsData = [
   },
 ];
 
-
-export {showsData};
+export { showsData };
