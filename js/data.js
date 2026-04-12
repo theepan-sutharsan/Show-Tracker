@@ -212,26 +212,31 @@ const usersData = [
     id: 1,
     name: "sutharsan",
     email: "theepansutharsan1117@gmail.com",
+    password:"12345"
   },
   {
     id: 2,
     name: "theepan",
     email: "theepan1982@gmail.com",
+    password:"23456"
   },
   {
     id: 3,
     name: "vasantha",
     email: "vasantha1983@gmail.com",
+    password:"34567"
   },
   {
     id: 4,
     name: "sudar",
     email: "sudar2026@gmail.com",
+    password:"45678"
   },
   {
     id: 5,
     name: "piraimathi",
     email: "piraimathi2007@gmail.com",
+    password:"56789"
   },
 ];
 
