@@ -1,7 +1,7 @@
 const showsData = [
   {
     id: 1,
-    title: "Game of Thrones",
+    title: "Game Of Thrones",
     year: "2011–2019",
     air_time: "Sundays at 9:00 PM",
     next_episode_air_date: "May 15, 2026",
@@ -204,6 +204,7 @@ const showsData = [
       },
     ],
   },
+  
 ];
 
 export { showsData };

@@ -35,17 +35,17 @@ function DisplayShows(data) {
 
 //Filter Using Numbers & Letters
 
-let letters1 = ["0-9"];
+let letters = ["0-9"];
 
 for (let i = 65; i <= 90; i++) {
-  letters1.push(String.fromCharCode(i));
+  letters.push(String.fromCharCode(i));
 }
-console.log(letters1);
+
 
 Letters();
 
 function Letters() {
-  letters1.forEach((letter, index) => {
+  letters.forEach((letter, index) => {
     let numLetters = document.getElementById("numLetters");
 
     return (numLetters.innerHTML += `
@@ -67,8 +67,8 @@ function Letters() {
 
 window.FilterNumLetters = function (index) {
   let filter1 = showsData.filter((show) => {
-    if (letters1[index] !== "0-9") {
-      return show.title.charAt() == letters1[index];
+    if (letters[index] !== "0-9") {
+      return show.title.charAt() == letters[index];
     } else {
       return (
         show.title.charAt() == "1" ||
@@ -162,3 +162,33 @@ window.FilterGenres = function (index) {
     onload();
   }
 };
+
+//Search Function
+
+let search=document.getElementById("search");
+
+search.addEventListener("input",(e)=>{
+  let value=[e.target.value,e.target.value.toUpperCase(),capitalizeWords(e.target.value)];
+    let filter3=showsData.filter((show)=>{
+        return show.title.includes(value[0])||show.title.includes(value[1])||show.title.includes(value[2]);
+    })
+   
+    if(filter3.length!==0){
+      
+    return (showsList.innerHTML="",
+      document.getElementById("availableStatus").textContent="",
+    DisplayShows(filter3),console.log(filter3))
+    }
+    else{
+      showsList.innerHTML="";
+      document.getElementById("availableStatus").textContent="No Shows Available";
+    }
+})
+
+function capitalizeWords(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
