@@ -37,7 +37,21 @@ function DisplayShows(data) {
 
 window.FilterNumLetters = function (letter) {
   let filter1 = showsData.filter((show) => {
-    return show.title.charAt() == letter;
+    if (letter !== "num") {
+      return show.title.charAt() == letter;
+    } else {
+      return (
+        show.title.charAt() == "1" ||
+        show.title.charAt() == "2" ||
+        show.title.charAt() == "3" ||
+        show.title.charAt() == "4" ||
+        show.title.charAt() == "5" ||
+        show.title.charAt() == "6" ||
+        show.title.charAt() == "7" ||
+        show.title.charAt() == "8" ||
+        show.title.charAt() == "9"
+      );
+    }
   });
   console.log(filter1);
 
@@ -48,7 +62,69 @@ window.FilterNumLetters = function (letter) {
     //alert("Show not Found!");
     window.onload = function () {
       let myModal = new bootstrap.Modal(
-        document.getElementById("showTrackerModal")
+        document.getElementById("showTrackerModal"),
+      );
+      myModal.show();
+    };
+
+    onload();
+  }
+};
+
+//Filter Using Genres
+
+let genres = [
+  "Action",
+  "Adventure",
+  "Animation",
+  "Children",
+  "Comedy",
+  "Documentary",
+  "Family",
+  "Fantasy",
+  "Home and Garden",
+  "Horror",
+  "Mini Series",
+  "Mystery",
+  "Reality",
+  "Romance",
+  "Sci-Fi",
+  "Suspense",
+  "Talk Show",
+  "Thriller",
+  "Travel",
+];
+Genres();
+function Genres() {
+  genres.forEach((gen, index) => {
+    let genresList = document.getElementById("genresList");
+
+    return (genresList.innerHTML += `
+    
+              <li class="list-inline-item bg-secondary rounded m-1">
+                <button onclick="FilterGenres(${index})" class="btn btn-sm btn-secondary text-dark fw-semibold"
+                  >${gen}</button
+                >
+              </li>
+             
+
+    `);
+  });
+}
+
+window.FilterGenres = function (index) {
+  let filter2 = showsData.filter((show) => {
+    return show.genre.includes(genres[index]);
+  });
+  console.log(filter2);
+  if (filter2.length !== 0) {
+    showsList.innerHTML = "";
+    DisplayShows(filter2);
+  } else {
+    //alert("Show not Found!");
+    window.onload = function () {
+      let myModal = new bootstrap.Modal(
+        document.getElementById("showTrackerModal"),
       );
       myModal.show();
     };

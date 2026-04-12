@@ -298,140 +298,44 @@
               </li>
             </ul>
           </div>
-          
-<!-- Modal -->
-<div class="modal fade " id="showTrackerModal" tabindex="-1" aria-labelledby="showTrackerModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="showTrackerModalLabel">ShowTracker</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        No Shows Available
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-       
-      </div>
-    </div>
-  </div>
-</div>
 
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="showTrackerModal"
+            tabindex="-1"
+            aria-labelledby="showTrackerModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="showTrackerModalLabel">
+                    ShowTracker
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">No Shows Available</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div id="movieGenres">
-            <ul class="movie-genres list-inline">
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Action</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Adventure</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Animation</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Children</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Comedy</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2">Crime</a>
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Documentary</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2">Drama</a>
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Family</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Fantasy</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2">Food</a>
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Home and Garden</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Horror</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Mini Series</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Mystery</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2">News</a>
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Reality</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Romance</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Sci-Fi</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2">Sport</a>
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Suspense</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Talk Show</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Thriller</a
-                >
-              </li>
-              <li class="list-inline-item bg-secondary rounded m-1">
-                <a href="" class="text-black text-decoration-none p-2"
-                  >Travel</a
-                >
-              </li>
-            </ul>
+            <ul class="movie-genres list-inline" id="genresList"></ul>
           </div>
         </div>
       </section>
