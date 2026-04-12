@@ -45,6 +45,14 @@ window.FilterNumLetters = function (letter) {
     showsList.innerHTML = "";
     DisplayShows(filter1);
   } else {
-    alert("Show not Found!");
+    //alert("Show not Found!");
+    window.onload = function () {
+      let myModal = new bootstrap.Modal(
+        document.getElementById("showTrackerModal")
+      );
+      myModal.show();
+    };
+
+    onload();
   }
 };
