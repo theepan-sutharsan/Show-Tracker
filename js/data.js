@@ -207,4 +207,34 @@ const showsData = [
   
 ];
 
-export { showsData };
+const usersData = [
+  {
+    id: 1,
+    name: "sutharsan",
+    email: "theepansutharsan1117@gmail.com",
+  },
+  {
+    id: 2,
+    name: "theepan",
+    email: "theepan1982@gmail.com",
+  },
+  {
+    id: 3,
+    name: "vasantha",
+    email: "vasantha1983@gmail.com",
+  },
+  {
+    id: 4,
+    name: "sudar",
+    email: "sudar2026@gmail.com",
+  },
+  {
+    id: 5,
+    name: "piraimathi",
+    email: "piraimathi2007@gmail.com",
+  },
+];
+
+
+
+export { showsData , usersData };
