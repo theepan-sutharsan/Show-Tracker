@@ -1,5 +1,6 @@
 function AddShow() {
-  let add = document.getElementById("showName").value.trim();
+  let addBox = document.getElementById("showName").value;
+  let add = addBox.trim();
   let status = document.getElementById("status");
 
   if (add !== "" && isNaN(add.charAt(0)) && !/[^A-Za-z0-9]/.test(add)) {
@@ -9,6 +10,7 @@ function AddShow() {
 
     setTimeout(() => {
       status.textContent = "";
+      ClearInput("showName");
     }, 2000);
   } else {
     status.innerHTML = `
@@ -17,6 +19,11 @@ function AddShow() {
 
     setTimeout(() => {
       status.textContent = "";
+      ClearInput("showName");
     }, 2000);
   }
+}
+
+function ClearInput(id) {
+  return (document.getElementById(id).value = "");
 }
