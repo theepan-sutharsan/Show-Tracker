@@ -1,4 +1,8 @@
 function AddShow() {
+  document.getElementById("addForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
   let addBox = document.getElementById("showName").value;
   let add = addBox.trim();
   let status = document.getElementById("status");
