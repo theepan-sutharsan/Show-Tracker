@@ -41,7 +41,6 @@ for (let i = 65; i <= 90; i++) {
   letters.push(String.fromCharCode(i));
 }
 
-
 Letters();
 
 function Letters() {
@@ -71,6 +70,7 @@ window.FilterNumLetters = function (index) {
       return show.title.charAt() == letters[index];
     } else {
       return (
+        show.title.charAt() == "0" ||
         show.title.charAt() == "1" ||
         show.title.charAt() == "2" ||
         show.title.charAt() == "3" ||
@@ -165,30 +165,40 @@ window.FilterGenres = function (index) {
 
 //Search Function
 
-let search=document.getElementById("search");
+let search = document.getElementById("search");
 
-search.addEventListener("input",(e)=>{
-  let value=[e.target.value,e.target.value.toUpperCase(),capitalizeWords(e.target.value)];
-    let filter3=showsData.filter((show)=>{
-        return show.title.includes(value[0])||show.title.includes(value[1])||show.title.includes(value[2]);
-    })
-   
-    if(filter3.length!==0){
-      
-    return (showsList.innerHTML="",
-      document.getElementById("availableStatus").textContent="",
-    DisplayShows(filter3),console.log(filter3))
-    }
-    else{
-      showsList.innerHTML="";
-      document.getElementById("availableStatus").textContent="No Shows Available";
-    }
-})
+search.addEventListener("input", (e) => {
+  let value = [
+    e.target.value,
+    e.target.value.toUpperCase(),
+    capitalizeWords(e.target.value),
+  ];
+  let filter3 = showsData.filter((show) => {
+    return (
+      show.title.includes(value[0]) ||
+      show.title.includes(value[1]) ||
+      show.title.includes(value[2])
+    );
+  });
+
+  if (filter3.length !== 0) {
+    return (
+      (showsList.innerHTML = ""),
+      (document.getElementById("availableStatus").textContent = ""),
+      DisplayShows(filter3),
+      console.log(filter3)
+    );
+  } else {
+    showsList.innerHTML = "";
+    document.getElementById("availableStatus").textContent =
+      "No Shows Available";
+  }
+});
 
 function capitalizeWords(str) {
   return str
     .toLowerCase()
     .split(" ")
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
 }
